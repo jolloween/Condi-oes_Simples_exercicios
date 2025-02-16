@@ -1,0 +1,23 @@
+#include <iostream>
+
+
+int main() {
+using namespace std;
+    double lv_velocidade;
+    double gv_pagar_multa;
+    int gv_valor_multa;
+    int gv_qtd_km;
+    gv_valor_multa = 5;
+
+    cout<< "Digite velocidade do carro em km/h: ";
+    cin >> lv_velocidade;
+
+    if (lv_velocidade > 80) {
+        cout << "Voce foi multado!\n";
+        gv_qtd_km = lv_velocidade - 80;
+        gv_pagar_multa = gv_qtd_km * gv_valor_multa;
+        cout << "Valor da multa e de: R$" << gv_pagar_multa << endl;
+    }
+    else{
+cout << "Voce nao foi multado";
+}
